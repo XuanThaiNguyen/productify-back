@@ -1,6 +1,6 @@
 import { Pool } from "pg";
 import { ENV } from "../config/env";
-import { drizzle } from "drizzle-orm/singlestore/driver";
+import { drizzle } from "drizzle-orm/node-postgres";
 import * as schema from "./schema";
 if (!ENV.DATABASE_URL) {
   throw new Error("DATABASE_URL is not defined");
